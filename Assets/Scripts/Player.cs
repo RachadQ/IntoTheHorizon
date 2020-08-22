@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
             transform.position = new Vector3(touch.x, transform.position.y, transform.position.z);
         }
 
-        Debug.Log(playerRb.velocity + " " + transform.position);
+
     }
 
     void OnTriggerEnter(Collider other)

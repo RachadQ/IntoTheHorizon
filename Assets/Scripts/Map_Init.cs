@@ -204,7 +204,7 @@ public class Map_Init : MonoBehaviour,IUnityAdsListener
 
         }
         Advertisement.Banner.SetPosition(BannerPosition.BOTTOM_CENTER);
-        Advertisement.Banner.Show("bannerPlacement");
+        Advertisement.Banner.Show("Banner");
        
     }
 }
