@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         playerRb = GetComponent<Rigidbody>() as Rigidbody;
-        data.PlayerSpeed = 1500;
+        data.PlayerSpeed = 1000;
         data.DirectionSpeed = 20;
 
        
@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
         transform.position = Vector3.Lerp(gameObject.transform.position, new Vector3(Mathf.Clamp(gameObject.transform.position.x + moveHorizontal, -2.5f, 2.5f),gameObject.transform.position.y,gameObject.transform.position.z),data.DirectionSpeed*Time.deltaTime);
 #endif
         playerRb.velocity = Vector3.forward * data.PlayerSpeed * Time.deltaTime;
-        transform.Rotate(Vector3.right * playerRb.velocity.z / 4);
+        transform.Rotate(Vector3.right * playerRb.velocity.z / 2);
         //Mobile controllers
         //get location touch on screen
         Vector2 touch = Camera.main.ScreenToWorldPoint(Input.mousePosition + new Vector3(0,0,10));

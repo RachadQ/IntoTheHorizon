@@ -45,6 +45,7 @@ public class Map_Init : MonoBehaviour,IUnityAdsListener
     // Start is called before the first frame update
     void Start()
     {
+        
         inMenuUI = GameObject.FindGameObjectWithTag("inMenu");
         player = GameObject.FindGameObjectWithTag("player");
         gameOverUI = GameObject.FindGameObjectWithTag("GameOver");

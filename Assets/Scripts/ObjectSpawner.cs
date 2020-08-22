@@ -29,6 +29,8 @@ public class ObjectSpawner : MonoBehaviour
             }
           
         }
+        
+
     }
 
     //spawn object
