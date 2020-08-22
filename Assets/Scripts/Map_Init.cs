@@ -71,7 +71,7 @@ public class Map_Init : MonoBehaviour,IUnityAdsListener
         {
             StartCoroutine(StartGame(0.0f));
         }
-        
+       
     }
 
     public void PauseButton()
@@ -137,10 +137,16 @@ public class Map_Init : MonoBehaviour,IUnityAdsListener
         //make sure the rest of Ui is off
         inGameUI.gameObject.SetActive(true);
         gameOverUI.gameObject.SetActive(false);
+       
         yield return new WaitForSeconds(waitTime);
+        //enable players constraints and collider
         player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionY;
+        yield return new WaitForSeconds(0.15f);
         player.GetComponent<SphereCollider>().enabled = true;
+       
+        
+
 
     }
 
@@ -171,8 +177,10 @@ public class Map_Init : MonoBehaviour,IUnityAdsListener
         {
             Debug.Log("ad Successful");
             AdReward = true;
+           
             StartCoroutine(StartGame(1.5f));
-          
+            
+
         }
         else if (showResult == ShowResult.Skipped)
         {

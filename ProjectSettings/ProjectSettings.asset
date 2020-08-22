@@ -782,6 +782,9 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Analytics: 1
+    Build: 1
+    Collab: 1
     UNet: 1
     Unity Ads: 1
   luminIcon:
@@ -798,7 +801,7 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   cloudProjectId: d562ad1e-4e39-453c-bccf-26c7c87bf60a
   framebufferDepthMemorylessMode: 0
-  projectName: Balloon Beach
+  projectName: Into The Horizon
   organizationId: rachad
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
