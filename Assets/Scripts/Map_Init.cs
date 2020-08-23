@@ -7,9 +7,9 @@ using UnityEngine.Advertisements;
 public class Map_Init : MonoBehaviour,IUnityAdsListener
 {
 #if UNITY_IOS
-    private string gameId = "1486551";
+    private string gameId = "3756406";
 #elif UNITY_ANDROID
-    private string gameId = "1486550";
+    private string gameId = "3756407";
 #endif
 
 
